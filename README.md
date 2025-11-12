@@ -1,10 +1,12 @@
+# 4681-Final-Project
+
 ## NL-SQL Assistant (Alpha)
 
 ### Overview
 This alpha prototype demonstrates a linear Natural Language to SQL flow using Snowflake Cortex Analyst. The goal is to keep the implementation simple while proving the end-to-end concept.
 
 ### Prerequisites
-- Python 3.10+
+- Python 3.11 (tested)
 - Access to a Snowflake account with Cortex Analyst enabled
 - Semantic model deployed for Cortex Analyst
 
@@ -12,7 +14,7 @@ This alpha prototype demonstrates a linear Natural Language to SQL flow using Sn
 1. Create and activate a virtual environment.
 2. Install dependencies:
    ```
-   pip install -r requirements.txt
+   python -m pip install -r requirements.txt
    ```
 3. Copy `.env.example` to `.env` and fill in your Snowflake credentials:
    - `SNOWFLAKE_ACCOUNT`
@@ -21,9 +23,9 @@ This alpha prototype demonstrates a linear Natural Language to SQL flow using Sn
    - `SNOWFLAKE_DATABASE`
    - `SNOWFLAKE_SCHEMA`
    - `SNOWFLAKE_WAREHOUSE`
-4. Run the Streamlit app:
+4. Run the Streamlit app (use the same interpreter that installed dependencies):
    ```
-   streamlit run app.py
+   python -m streamlit run app.py
    ```
 
 ### Usage
@@ -37,4 +39,3 @@ This alpha prototype demonstrates a linear Natural Language to SQL flow using Sn
 ### Notes
 - This is an alpha build: no caching, no background tasks, minimal error handling.
 - Contact the maintainer before modifying dependencies or increasing architectural complexity.
-
