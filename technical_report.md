@@ -78,9 +78,7 @@ final_project_alpha_v/
 ├── cortex_client.py       # Snowflake Cortex API wrapper
 ├── config.py              # Environment variable loader
 ├── requirements.txt        # Python dependencies
-├── README.md              # Setup instructions
-├── plan.md                # Original design document
-└── SNOWFLAKE_CONFIG.md    # Cortex integration details
+└── README.md              # Setup instructions
 ```
 
 **Purpose of Each File:**
@@ -154,7 +152,7 @@ def _connection(self) -> Iterator[SnowflakeConnection]:
 
 **streamlit**: Handles HTTP server, WebSocket for reactivity, widget rendering. Zero configuration needed.
 
-**snowflake-connector-python**: Provides `snowflake.connector.connect()` and cursor API. Used for:
+**snowflake-connector-python**: Provides `snowflake.connector.connect()`. Used for:
 - Establishing connection (via `config.py` settings)
 - Executing SQL (both Cortex calls and generated queries)
 - Fetching results
