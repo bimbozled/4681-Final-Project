@@ -1,8 +1,6 @@
 # NL-SQL Assistant Alpha - Technical Documentation
 
-## 1. Project Overview & Philosophy
-
-### Problem Statement
+## 1. Problem Statement
 Business users need to query Snowflake databases but lack SQL expertise. Traditional BI tools require learning query languages or building dashboards. This project enables natural language questions to be automatically converted to SQL and executed.
 
 ---
@@ -189,15 +187,11 @@ SNOWFLAKE_WAREHOUSE=COMPUTE_WH
 
 ### Build & Deployment Pipeline
 
-**No build step.** Python interpreted directly.
-
 **Deployment:**
 1. Install dependencies: `pip install -r requirements.txt`
 2. Configure `.env` file
 3. Run: `streamlit run app.py`
 4. Access: `http://localhost:8501` (default Streamlit port)
-
-**No CI/CD, no containerization, no production deployment.** This is alpha-only.
 
 ---
 
