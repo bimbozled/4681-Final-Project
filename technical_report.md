@@ -5,27 +5,6 @@
 ### Problem Statement
 Business users need to query Snowflake databases but lack SQL expertise. Traditional BI tools require learning query languages or building dashboards. This project enables natural language questions to be automatically converted to SQL and executed.
 
-### Core Value Proposition
-**Zero-to-SQL in one interaction**: User types a question → System generates and executes SQL → Results appear immediately.
-
-### Design Philosophy: Simplicity First
-This is an **alpha prototype** built under tight deadlines. Every design decision prioritizes:
-- **Working > Perfect**: A simple working solution beats complex broken ones
-- **Linear Flow**: No reasoning loops, state machines, or orchestration complexity
-- **Show the Work**: Display intermediate steps (enhanced query, SQL) for transparency
-- **Fail Fast**: Clear error messages, no silent failures
-
-### Key Trade-offs Made
-
-| Decision | Rationale | Trade-off |
-|----------|-----------|-----------|
-| No LangChain | Too complex for alpha | Less extensible, but faster to build |
-| No vector DBs | Not needed for single LLM call | Can't cache embeddings, but simpler |
-| String-based query enhancement | Fast, deterministic | Less sophisticated than LLM-based enhancement |
-| Single LLM provider (Cortex) | Snowflake-native, no API keys | Vendor lock-in, but simpler integration |
-| No conversation history | Linear flow only | Can't handle follow-ups, but cleaner code |
-| No caching | Alpha doesn't need it | Slower for repeated queries, but simpler |
-
 ---
 
 ## 2. Architecture & System Design
