@@ -35,7 +35,3 @@ This alpha prototype demonstrates a linear Natural Language to SQL flow using Sn
    - The enhanced query text
    - The generated SQL statement
    - The result set returned from Snowflake
-
-### Notes
-- This is an alpha build: no caching, no background tasks, minimal error handling.
-- Contact the maintainer before modifying dependencies or increasing architectural complexity.
