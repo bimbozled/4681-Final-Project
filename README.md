@@ -2,6 +2,8 @@
 
 ## NL-SQL Assistant (Alpha)
 
+Find better explaination [here](technical_report.md)
+
 ### Overview
 This alpha prototype demonstrates a linear Natural Language to SQL flow using Snowflake Cortex Analyst. The goal is to keep the implementation simple while proving the end-to-end concept.
 
