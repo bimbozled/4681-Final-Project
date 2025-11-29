@@ -1,0 +1,9 @@
+# Snowflake Streamlit environment configuration
+# Using Python 3.10 (supported in your Snowflake instance)
+name: nl_sql_assistant
+channels:
+  - snowflake
+dependencies:
+  - python=3.10
+  - snowflake-snowpark-python
+  - streamlit
