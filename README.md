@@ -2,8 +2,6 @@
 
 # EDW Data Assistant
 
-![Workflow Visualization](1765390576241_image.png)
-
 ## The Problem
 
 Data analysts waste hours writing SQL queries. Business users can't access their own data. LLM-to-SQL tools hallucinate columns and generate broken queries. The gap between "I have a question" and "I have an answer" is still too wide.
