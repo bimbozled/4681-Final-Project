@@ -138,9 +138,7 @@ Results: 8 rows | 142ms latency | Trace ID: b7c3a1f5
 Users can turn business questions into data insights in seconds—and actually *trust* the results.
 
 ## Links
-
-- 📂 **GitHub**: [bimbozled/4681-Final-Project](https://github.com/bimbozled/4681-Final-Project)
-- 📊 **Presentation**: [4681 Final Presentation](#)
+- 📊 **Presentation**: [4681 Final Presentation](https://docs.google.com/presentation/d/1ce6wreNk6xVEal_wxEVvjVkFXb3VQ-MJ-xaPuffBGaQ/edit?usp=sharing)
 
 ---
 
